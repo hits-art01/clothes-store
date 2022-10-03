@@ -1,0 +1,13 @@
+.cart-menu__list {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 2px solid rgb(13, 0, 46);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.cart-menu__remove {
+  width: 20px;
+  height: 20px;
+}

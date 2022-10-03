@@ -5,14 +5,20 @@ import Products from "../components/Products/Products";
 import { getGoodsWatch } from "../redux/actions";
 
 const StorePage = () => {
-  const goods = useSelector((state) => state.goods.goods);
   const dispatch = useDispatch();
+  const goods = useSelector((state) => state.goods.goods);
   useEffect(() => {
     dispatch(getGoodsWatch());
   }, []);
   return (
     <div>
-      <Products />
+      {goods.length > 0 ? (
+        <Products />
+      ) : (
+        <div className="loader-cont">
+          <div className="lds-dual-ring"></div>
+        </div>
+      )}
     </div>
   );
 };

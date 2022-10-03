@@ -1,2 +1,9 @@
 export const GET_GOODS = "GET_GOODS";
 export const GET_GOODS_WATCH = "GET_GOODS_WATCH";
+
+export const SET_ITEM_IN_CART = "SET_ITEM_IN_CART";
+export const DELETE_ITEM_IN_CART = "DELETE_ITEM_IN_CART";
+
+export const SET_CURRENT_PRODUCT = "SET_CURRENT_PRODUCT";
+
+export const RELOAD_GOODS = "RELOAD_GODS";

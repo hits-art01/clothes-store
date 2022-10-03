@@ -7,3 +7,18 @@
     height: 35px;
   }
 }
+
+.items-quantity {
+  font-weight: 900;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(144, 24, 24);
+  color: #fff;
+  position: absolute;
+  top: 17px;
+  left: -8px;
+}

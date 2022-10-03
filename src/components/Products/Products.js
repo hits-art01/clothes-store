@@ -6,9 +6,9 @@ import "./products.scss";
 const Products = () => {
   const goods = useSelector((state) => state.goods.goods);
   return (
-    <div>
-      {goods.map((product, index) => (
-        <ProductItem product={product} key={index} />
+    <div className="goods-body">
+      {goods.map((product) => (
+        <ProductItem product={product} key={product.id} />
       ))}
     </div>
   );
