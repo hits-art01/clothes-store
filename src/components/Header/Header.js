@@ -6,13 +6,15 @@ import CartBlock from "../CartBlock/CartBlock";
 const Header = () => {
   return (
     <div className="header">
-      <div className="wrapper">
-        <Link to="/" className="header__store-title">
-          Store
-        </Link>
-      </div>
-      <div className="wrapper header__cart-btn-wrapper">
-        <CartBlock />
+      <div className="header-container">
+        <div className="wrapper">
+          <Link to="/" className="header__store-title">
+            Store
+          </Link>
+        </div>
+        <div className="wrapper header__cart-btn-wrapper">
+          <CartBlock />
+        </div>
       </div>
     </div>
   );

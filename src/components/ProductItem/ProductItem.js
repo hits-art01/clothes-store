@@ -6,6 +6,7 @@ import {
   getGoods,
   reloadGoods,
   setCurrentProduct,
+  setCurrentSaga,
   setItemInCart,
 } from "../../redux/actions";
 import Button from "../../UI/Button/Button";
@@ -19,7 +20,7 @@ const ProductItem = ({ product }) => {
 
   const pageClick = () => {
     navigate(`product/${product.title}`);
-    dispatch(setCurrentProduct(product));
+    dispatch(setCurrentSaga(product));
     dispatch(reloadGoods([]));
   };
   return (

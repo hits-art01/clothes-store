@@ -1,16 +1,20 @@
 .cart-menu {
   padding: 10px;
-  background: rgb(145, 139, 180);
+  background: #45a29e;
   border-radius: 10px;
   width: 300px;
   position: absolute;
   top: -3px;
   left: -340px;
   font-weight: 600;
+  @media (max-width: 530px) {
+    top: 60px;
+    left: -290px;
+  }
   .cart-menu__list {
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: #0b0c10;
     border-bottom: 2px solid rgb(13, 0, 46);
     margin-bottom: 10px;
   }
@@ -20,7 +24,7 @@
     padding: 5px 10px;
     font-size: 16px;
     font-weight: 600;
-    background: #fff;
+    background: #0b0c10;
     border-radius: 10px;
   }
 }

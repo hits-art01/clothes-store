@@ -1,17 +1,27 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #0b0c10;
+}
+.header-container {
+  max-width: 1080px;
+  margin: 0 auto;
   display: flex;
+  padding: 0 30px;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  margin-bottom: 30px;
-
-  & .header__store-title {
-    color: rgb(13, 0, 46);
-    font-size: 36px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+  min-height: 70px;
   & .header__cart-btn-wrapper {
     // justify-content: flex-end;
   }
+}
+
+.header__store-title {
+  color: #66fcf1;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
 }

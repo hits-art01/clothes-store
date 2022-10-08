@@ -2,8 +2,9 @@
 
 body {
   font-family: "Montserrat", Arial serif;
-  color: rgb(13, 0, 46);
-  background: rgb(204, 204, 204);
+  color: #0b0c10;
+  background: #1f2833;
+  margin-top: 80px;
 }
 
 .App {
@@ -14,8 +15,9 @@ body {
 }
 
 .loader-cont {
-  display: flex;
-  justify-content: center;
+  width: 164px;
+  height: 164px;
+  margin: 0 auto;
 }
 
 .lds-dual-ring {

@@ -7,9 +7,18 @@ const initialState = {
 export const goodsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_GOODS:
+      const mensGoods = action.payload.filter(
+        (prod) => prod.category === "men's clothing"
+      );
+      const womensGoods = action.payload.filter(
+        (prod) => prod.category === "women's clothing"
+      );
+
+      console.log(mensGoods, womensGoods);
+
       return {
         ...state,
-        goods: [...state.goods, ...action.payload],
+        goods: [...state.goods, ...mensGoods, ...womensGoods],
       };
     case RELOAD_GOODS: {
       return {

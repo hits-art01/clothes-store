@@ -3,12 +3,18 @@
   padding: 15px;
   align-self: flex-end;
   align-self: normal;
+  @media (max-width: 916px) {
+    flex: 0 1 45%;
+  }
+  @media (max-width: 616px) {
+    flex: 0 1 100%;
+  }
 }
 
 .product-item {
   padding: 15px;
-  background: rgb(255, 224, 199);
-  border-radius: 35px;
+  background: #0b0c10;
+  border-radius: 40px;
   display: flex;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -21,6 +27,7 @@
     font-size: 20px;
     font-weight: 700;
     flex: 1 1 auto;
+    color: #c5c6c7;
   }
   .product-item__buy {
     margin-top: auto;

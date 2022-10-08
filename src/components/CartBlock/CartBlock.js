@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./cart-block.scss";
 import { HiOutlineShoppingCart, HiShoppingCart } from "react-icons/hi";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CartMenu from "../CartMenu/CartMenu";
+import { setVisible } from "../../redux/actions";
 
 const CartBlock = () => {
   const items = useSelector((state) => state.cart.items);
@@ -24,6 +25,7 @@ const CartBlock = () => {
           <div className="items-quantity">{items.length}</div>
         ) : null}
       </div>
+
       {isVisible ? <CartMenu /> : null}
     </div>
   );
