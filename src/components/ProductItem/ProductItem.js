@@ -21,7 +21,7 @@ const ProductItem = ({ product }) => {
   const pageClick = () => {
     navigate(`product/${product.title}`);
     dispatch(setCurrentSaga(product));
-    dispatch(reloadGoods([]));
+    // dispatch(reloadGoods([]));
   };
   return (
     <div className="product-column" onClick={pageClick}>
