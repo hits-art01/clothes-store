@@ -14,8 +14,6 @@ export const goodsReducer = (state = initialState, action) => {
         (prod) => prod.category === "women's clothing"
       );
 
-      console.log(mensGoods, womensGoods);
-
       return {
         ...state,
         goods: [...state.goods, ...mensGoods, ...womensGoods],
