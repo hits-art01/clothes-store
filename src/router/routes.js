@@ -3,6 +3,6 @@ import StorePage from "../pages/StorePage";
 
 export const publickRoutes = [
   { path: "/clothes-store", element: <StorePage /> },
-  { path: "/product/:title", element: <ProductPage /> },
+  { path: "/clothes-store/product/:title", element: <ProductPage /> },
   // { path: "/order", element: <OrderPage /> },
 ];

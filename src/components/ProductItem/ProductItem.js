@@ -19,7 +19,7 @@ const ProductItem = ({ product }) => {
   const dispatch = useDispatch();
 
   const pageClick = () => {
-    navigate(`product/${product.title}`);
+    navigate(`/clothes-store/product/${product.title}`);
     dispatch(setCurrentSaga(product));
     // dispatch(reloadGoods([]));
   };
